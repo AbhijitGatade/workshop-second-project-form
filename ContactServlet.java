@@ -14,6 +14,10 @@ public class ContactServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse res) 
 			throws ServletException, IOException {
+		String name = req.getParameter("name");
+		String email = req.getParameter("email");
+		System.out.println("Name:" + name);
+		System.out.println("Email:" + email);
 		req.getRequestDispatcher("thankyou.jsp").forward(req, res);
 	}
 }
