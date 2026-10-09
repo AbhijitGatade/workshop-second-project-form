@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>Hello ${name}, we will send you details on ${email}.</h1>
 </body>
 </html>
