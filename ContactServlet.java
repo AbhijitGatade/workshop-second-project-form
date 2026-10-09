@@ -18,6 +18,9 @@ public class ContactServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		System.out.println("Name:" + name);
 		System.out.println("Email:" + email);
+		
+		req.setAttribute("name", name);
+		req.setAttribute("email", email);
 		req.getRequestDispatcher("thankyou.jsp").forward(req, res);
 	}
 }
