@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<form action="contact" method="get">
 	Name<br />
-	<input type="text" />
+	<input type="text" name="name" /><br />
 	Email<br />
-	<input type="email" /><br />
+	<input type="email" name="email" /><br />
 	<input type="submit" value="Submit" />
+	</form>
 </body>
 </html>
